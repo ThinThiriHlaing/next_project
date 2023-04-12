@@ -18,7 +18,7 @@ const SingleEvent = ({ data }) => {
       setMessage("Please introduce a correct email address");
     }
     try {
-      const response = await fetch("/api/email-registration", {
+      const response = await fetch("/pages/api/email-registration.js", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
